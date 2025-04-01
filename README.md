@@ -6,10 +6,6 @@ Ce dépôt contient à la fois le code source du site et les documents de concep
 
 ---
 
-## Structure du dépôt
-
----
-
 ## Fonctionnalités principales
 
 - Création, modification, suppression et consultation d’objets célestes
@@ -44,4 +40,6 @@ composer install
 php artisan key:generate
 php artisan migrate --seed
 php artisan serv
+```
+
 --> lien généré en localhost
