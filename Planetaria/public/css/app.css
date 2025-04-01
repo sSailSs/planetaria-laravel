@@ -1,0 +1,399 @@
+body {
+    background-image: url('/images/space-background.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* 🌟 NAVBAR FIXÉE EN HAUT ET LARGEUR TOTALE */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 60px;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+/* 🌍 LOGO ET TITRE */
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* 📌 MENU LIENS */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.nav-links a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+    justify-content: center;
+    
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Or */
+}
+
+.navbar form {
+    margin-left: 20px;
+    margin-right: 40px;
+    flex-shrink: 0;
+}
+
+.navbar form button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+    font-size: 16px;
+    position: relative;
+    top: -10px;
+}
+
+.navbar form button:hover {
+    background-color: #0056b3;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: nowrap;
+}
+
+.navbar .nav-group {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Espace entre les liens et le bouton */
+}
+
+
+/* 🔴 BOUTON DÉCONNEXION */
+.btn-logout {
+    padding: 10px 20px; /* Ajuste la taille pour qu'elle corresponde aux autres liens */
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logout-form {
+    display: flex;
+    align-items: center;
+}
+
+.btn-logout:hover {
+    background-color: #0056b3; /* Changement de couleur au survol */
+}
+
+/* 🟦 AJOUTER UNE PLANÈTE */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; /* Ajustement pour ne pas être caché par la navbar */
+}
+
+/* 🛠 CORRECTION DU BOUTON "AJOUTER UNE PLANÈTE" */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s;
+    margin-top: 10px; /* Espacement sous la navbar */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh; /* Ajuste la hauteur pour un bon placement */
+    margin-top: 50px; /* Pour éviter qu'il soit trop collé à la navbar */
+}
+
+/* Centrage du conteneur principal */
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Style pour le titre */
+h2 {
+    color: white !important; /* Texte en blanc */
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Style des boutons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-warning {
+    background: #ffc107;
+    color: black;
+}
+
+.btn-warning:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Table stylée */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    color: white !important; /* Texte en blanc */
+    font-weight: bold;
+}
+
+a.bg-blue-600 {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* 🌟 Formulaire */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: 1.1rem;
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid #ddd;
+    background-color: #333;
+    color: white;
+    width: 95%;
+    margin-top: 0.5rem;
+    border-bottom: 2px solid #FFD700;
+}
+
+input:focus {
+    outline: none;
+    border-color: #FFD700;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem; /* Ajoute un espacement de 1.5rem entre chaque champ */
+}
+
+/* Champ texte, nombre, email, etc. */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select,
+
+textarea {
+    width: 97%;
+    background-color: #1f1f1f;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+    margin-bottom: 0.5rem;
+}
+
+/* Focus avec surbrillance dorée */
+select:hover {
+    border-color: #FFD700;
+}
+
+select:focus {
+    outline: none;
+    border-color: #FFD700;
+    box-shadow: 0 0 5px #FFD70055;
+}
+
+textarea:focus {
+    border-color: #FFD700;
+    outline: none;
+}
+
+/* Label */
+label.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Message d'erreur */
+.text-red-500 {
+    color: #f87171;
+}
+
+/* Pour éviter les styles moches du navigateur */
+
+select {
+    appearance: none;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 12px 40px 12px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: border-color 0.3s ease;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    text-decoration: none;
+}
+
+/* Style personnalisé pour "Se souvenir de moi" */
+.remember-me-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espacement entre la case et le texte */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.remember-me-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: #007bff; /* couleur personnalisée si supportée */
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+.remember-me-label {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+

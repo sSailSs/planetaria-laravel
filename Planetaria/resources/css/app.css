@@ -1,0 +1,79 @@
+
+
+/* Barre de navigation */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Or */
+}
+
+/* Contenu */
+.container {
+    max-width: 1200px;
+    margin: 100px auto 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Boutons */
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: darkred;
+}
+
+a.bg-blue-600 {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.navbar form {
+    margin-left: auto; /* Pousse le bouton vers la droite */
+}
+
+.navbar form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar form button:hover {
+    background-color: #0056b3;
+}
