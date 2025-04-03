@@ -26,6 +26,15 @@ Ce dépôt contient à la fois le code source du site et les documents de concep
 
 ---
 
+## En ligne
+
+- Adresse à renseigner dans l'url : 90.121.52.205:50304
+- Connexion GLPI (via le site)
+    - Identifiant : usertest
+    - Password : Usertest!147
+    
+---
+
 ## Installation locale
 
 1. Se placer dans le dossier `Planetaria`
