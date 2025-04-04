@@ -94,6 +94,54 @@ body {
     gap: 25px; /* Espace entre les liens et le bouton */
 }
 
+footer {
+    width: 100vw;
+    box-sizing: border-box; 
+    overflow-x: hidden;
+}
+
+/* Pied de page */
+.footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ccc;
+    padding: 1rem 2rem;
+    font-size: 0.875rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-content {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    text-align: left;
+    
+}
+
+.footer-content a {
+    margin-left: 3rem; /* ou 0.5rem */
+}
+
+.mentions-link {
+    color: #60a5fa; /* bleu clair comme les autres liens */
+    text-decoration: underline;
+}
+
+.mentions-link:hover {
+    color: white;
+}
+
+.mentions-link:visited {
+    color: #60a5fa; /* même couleur que non-visité */
+}
+
+
 
 /* 🔴 BOUTON DÉCONNEXION */
 .btn-logout {

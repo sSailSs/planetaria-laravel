@@ -50,5 +50,15 @@
         @yield('content')
     </main>
 
+    <footer class="footer">
+        <div class="footer-content">
+            © {{ date('Y') }} Filmora — Site fictif.
+            <span class="ml-2">
+                <a href="{{ route('mentions') }}" class="mentions-link">Mentions légales</a>
+            </span>
+        </div>
+    </footer>
+
+
 </body>
 </html>

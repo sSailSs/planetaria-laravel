@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Planet;
 use App\Models\User;
 
+Route::view('/mentions-legales', 'mentions')->name('mentions');
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Route personnalisée (non couverte par resource)
